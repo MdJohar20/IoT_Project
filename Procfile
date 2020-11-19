@@ -1,1 +1,1 @@
-worker python IoT_project.py
+worker: python IoT_project.py
