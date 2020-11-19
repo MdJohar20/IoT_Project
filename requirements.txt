@@ -1,2 +1,0 @@
-python-telegram-bot
-adafruit_IO
