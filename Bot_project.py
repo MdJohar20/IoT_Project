@@ -1,14 +1,14 @@
 import os          #operating system
 import requests    #for getting data from cloud
 
-!pip install adafruit-io
+#!pip install adafruit-io
 from Adafruit_IO import Client, Feed,Data                    #import libraries for adafruit
 ADAFRUIT_IO_USERNAME = os.getenv('ADAFRUIT_IO_USERNAME')     #adafruit username and password should be given as 'Config Vars' in the settings of your app on Heroku 
 ADAFRUIT_IO_KEY = os.getenv('ADAFRUIT_IO_KEY') 
 #these keys are from adafruit .io
 aio = Client('ADAFRUIT_IO_USERNAME','ADAFRUIT_IO_KEY')       # create instance of REST client
 
-!pip install python-telegram-bot
+#!pip install python-telegram-bot
 from telegram.ext import Updater,CommandHandler,MessageHandler,Filters #importing requires handlers from telegram.ext
 import requests #for getting data from cloud
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN') #token is generate from telebot
